@@ -42,7 +42,7 @@ class Sensor extends REST_Controller
       $this->response($response);
   }
 
-  public function servidor_post() {
+  public function servidor_get() {
     $dados = $this->Sensor_model->get_leitura();
     $this->response($dados);
   }

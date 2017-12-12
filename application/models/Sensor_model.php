@@ -14,7 +14,6 @@ class Sensor_model extends CI_Model
     }
 
     public function get_leitura() {
-        $this->db->select('s1, s2, s3');
         $this->db->order_by('timestamp', 'DESC');
         return $this->db->get('leituras')->row();
     }
